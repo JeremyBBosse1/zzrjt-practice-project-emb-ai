@@ -23,7 +23,7 @@ def sent_analyzer():
     if label is None:
         return "Invalid input! Try again."
     else:
-        return "The given text has been identified as {} with a score of {}".format(label.split('_')[1], score)
+        return f"The given text has been identified as {label} with a score of {score}."
     
 
 @app.route("/")
